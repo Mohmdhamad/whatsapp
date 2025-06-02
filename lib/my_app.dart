@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tasks/core/style/colors.dart';
 import 'package:tasks/features/home/view/screen/home_screen.dart';
 
 class MyApp extends StatelessWidget{
@@ -8,6 +9,7 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       home: HomeScreen(),
       debugShowCheckedModeBanner: false,
+
     );
   }
 
