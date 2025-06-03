@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
-
-import '../../../../models/chat_model.dart';
-import 'chat_builder.dart';
-
-Widget listBuilder()=>ListView.separated(
+import '../../../../models/user_model.dart';
+import 'status_builder.dart';
+Widget recentStatusListBuilder()=>ListView.separated(
   physics: NeverScrollableScrollPhysics(),
   shrinkWrap: true,
   itemBuilder: (context,index){
-    return chatBuilder(user[index]);
+    addLists();
+    return statusBuilder(recent[index]);
   },
-  itemCount: user.length,
-  separatorBuilder: (context,index)=>SizedBox(height: 1.0,),
+  itemCount: recent.length,
+  separatorBuilder: (context,index)=>SizedBox(height: 0.5,),
 );
+
+Widget seenStatusListBuilder()=>ListView.separated(
+  physics: NeverScrollableScrollPhysics(),
+  shrinkWrap: true,
+  itemBuilder: (context,index){
+    return statusBuilder(seen[index]);
+  },
+  itemCount: seen.length,
+  separatorBuilder: (context,index)=>SizedBox(height: 0.5,),
+);
+

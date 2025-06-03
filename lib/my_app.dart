@@ -5,7 +5,6 @@ import 'package:tasks/features/layout/view/screen/home_layout.dart';
 
 class MyApp extends StatelessWidget{
   const MyApp ({super.key});
-
   Widget build(BuildContext context){
     return MaterialApp(
       home: HomeLayout(),

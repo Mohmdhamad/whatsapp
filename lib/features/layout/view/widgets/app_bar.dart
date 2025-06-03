@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tasks/features/layout/view/widgets/bottom_nav.dart';
-import '../../../../core/style/app_text.dart';
 import '../../../../core/style/colors.dart';
 import '../../../../core/style/text_style.dart';
 
@@ -24,11 +23,11 @@ AppBar appBar(){
             PopupMenuItem(child: TextButton(onPressed: (){
 
             },
-              child: Text('New group',),),),
+              child: Text('New Chat',),),),
             PopupMenuItem(child: TextButton(onPressed: (){},
               child: Text('New group',),),),
             PopupMenuItem(child: TextButton(onPressed: (){},
-              child: Text('New group',),),),
+              child: Text('Settings',),),),
 
           ])
     ],

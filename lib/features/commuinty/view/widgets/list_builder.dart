@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../models/chat_model.dart';
+import '../../../../models/user_model.dart';
 import 'chat_builder.dart';
 
 Widget listBuilder()=>ListView.separated(
