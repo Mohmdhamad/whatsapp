@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:tasks/features/layout/view/widgets/bottom_nav.dart';
 import '../../../../core/style/app_text.dart';
 import '../../../../core/style/colors.dart';
 import '../../../../core/style/text_style.dart';
 
-AppBar appBarHome(){
+AppBar appBar(){
   return AppBar(
     title: Text(
-      'WhatsApp',
+      titles[currentIndex],
       style: titleStyle(textSize: 20.0,
         color: AppColors.green,
       ),
     ),
     actions: [
       IconButton(onPressed: (){},
-        icon: Icon(Icons.camera_alt_outlined),),
+        icon: Icon(actions[currentIndex]),),
 
       PopupMenuButton(
           position: PopupMenuPosition.under,

@@ -3,9 +3,7 @@ import 'package:tasks/features/home/view/widgets/home_body.dart';
 
 
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
+class UpdatesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return HomeBody();

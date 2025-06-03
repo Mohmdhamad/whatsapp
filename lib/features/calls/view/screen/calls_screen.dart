@@ -3,12 +3,12 @@ import 'package:tasks/features/home/view/widgets/home_body.dart';
 
 
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class CallsScreen extends StatelessWidget{
+  const CallsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return HomeBody();
+    return  HomeBody();
   }
 }
 
