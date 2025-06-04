@@ -22,7 +22,7 @@ class UpdatesBody extends StatelessWidget {
               color: AppColors.green,
             ),
             ),
-            statusBuilder(user[0]),
+            statusBuilder(user[10]),
             Text('Recent Updates',
             style: titleStyle(),
             ),
